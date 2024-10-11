@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cart-icon{
+    position: relative;
+}
+.cart-icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cart-icon span{
+    background-color: red;
+    padding: 4px 6px;
+    color: white;
+    font-size: 14px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+nav{
+    display: flex;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    font-size: 18px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s ease-out;
+}
+nav ul li a:hover{
+    color: orangered;
+}
+
+.edge{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.hamburger{
+    display: none;
+}
+.edge button{
+    padding: 8px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 4px;
+}
+.edge button:hover{
+    background-color: rgba(255, 0, 0, 0.747);
+}
+
+
+/* herosection */
+.heropage{
+    height: calc(100vh - 95px);
+    width: 100%;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 80px;
+    gap: 20px;
+
+}
+.heroText{
+width: 100%;
+}
+.heroBig{
+    font-size: 24px;
+    margin: 20px 0 40px 0;
+    width: 90%;
+}
+.heroText h1{
+    font-size: 60px;
+}
+.heroText button{
+    padding: 14px 40px;
+    font-size: 18px;
+    border-radius: 4px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: 500;
+}
+.heroImage{
+    width: 100%;
+    height: 615px;
+}
+.heroImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 480px){
+    header{
+        padding: 10px 20px;
+    }
+    nav{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+    }
+    .edge button{
+        display: none;
+    }
+    .wrapper{
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 20px;
+    }
+    .heroImage{
+        width: 100%;
+        height: 100%;
+    }
+    .heroText{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .heroText h1{
+        font-size: 40px;
+    }
+    .heroBig{
+        font-size: 18px;
+        width: 100%;
+        margin: 10px 0 20px 0;
+    }
+    .heroText button{
+        padding: 10px 30px ;
+        font-size: 16px;
+        transition:  all 0.5s ease-out;
+    }
+    .heroText button:hover{
+        background-color: rgba(255, 0, 0, 0.614);
+        scale: 105%;
+    }
+}
